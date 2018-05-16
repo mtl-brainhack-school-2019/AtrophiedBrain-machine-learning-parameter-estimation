@@ -7,9 +7,12 @@ The general objectives of my brainhack project is to familiarise myself with mac
 Specific learning objectives and deliverables/n
 During the brainhack school, I hope to achieve to following goals:
 
-1) Starting from a fictive equation and data calculated with the equation, test machine learning tools to find the weight of parameters for the linear model.  For example :/n
-   f(t,u,v,w,x,y,z) = 2.1*t + 3.6*u + 2.8*v + 5*w + 1.4*x - 2.5*y + 4*z/n
-   f()=cognition/n
+1) Starting from a fictive equation and data calculated with the equation, test machine learning tools to find the weight of parameters for the linear model.  For example :
+
+   f(t,u,v,w,x,y,z) = 2.1*t + 3.6*u + 2.8*v + 5*w + 1.4*x - 2.5*y + 4*z
+   
+   f()=cognition
+   
    t=systolic blood pressure/140/n
    u=diastolic blood pressure/90/n
    v=glycosylated Hb/7/n
