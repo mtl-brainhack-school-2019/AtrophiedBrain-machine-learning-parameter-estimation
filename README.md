@@ -13,25 +13,16 @@ During the brainhack school, I hope to achieve to following goals:
    
    f()=cognition
    
-   t=systolic blood pressure/140
-   
-   u=diastolic blood pressure/90
-   
-   v=glycosylated Hb/7
-   
-   w=age/70
-   
-   x=LDL/2
-   
-   y=years of education/12
-   
-   z=VS/20
-   
+   t=systolic blood pressure/140 | u=diastolic blood pressure/90 | v=glycosylated Hb/7 | w=age/70 | x=LDL/2 | y=years of education/12 | z=VS/20 |   
    
 2) Redo with a non-linear equation.
 
 3) Redo with introduction of variability in the model. (Precision on the mesures of parameters, errors, etc)
 
-4) Program in python a small algorythm to read text files medical past history and medication in tables (the problem is they used lot of different words for the same disease, abrviations, etc.)
+4) Try the automatic clustering on one model.
+
+5) Program in python a small algorythm to read text files medical past history and medication in tables (the problem is they used lot of different words for the same disease, abrviations, etc.)
+
+6) Planify the organisation of my data.
 
 I don't know with who I want to work with but I have lot of interest in vascular impact on cognition and my final model will probably includ that parameter.
