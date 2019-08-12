@@ -4,7 +4,7 @@ Repository for AtrophiedBrain, inherited and inspired by Sylvie Rheault's BrainH
 ## Background
 The general objectives of this BrainHack project is to use machine learning techniques to estimate the parameters of mathematical models.
 
-## Specific learning objectives and deliverables/n
+## Specific learning objectives and deliverables
 During the BrainHack school, I hope to achieve to following goals:
 
 1) Starting from a fictive equation and data simulated with the equation, test machine learning tools to find the weight of parameters for the linear model.  For example:
