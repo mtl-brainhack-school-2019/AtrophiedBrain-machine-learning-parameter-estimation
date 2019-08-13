@@ -7,7 +7,7 @@ The general objectives of this BrainHack project is to use machine learning tech
 ## Specific learning objectives and deliverables
 During the BrainHack school, I hope to achieve to following goals:
 
-### Regression and machine learning:
+### Regression and machine learning
 
 1) Starting from a fictive equation and data simulated with the equation, test machine learning tools to find the weight of parameters for the linear model.  For example:
 
