@@ -35,7 +35,7 @@ dz/dt = a*z + b*(x + y)
 
 Parameters: -1  	&#8804; a, b  	&#8804; 1 
 
-6) Validate the model, investigating the identifiability of the parameters
+6) Validate the model, investigating the identifiability of the parameters using Pydentify, which performs identifiability analysis by performing a Parameter Profile Analysis using COPASI 
 
 7) Generate noisy training data from the ODEs
 
