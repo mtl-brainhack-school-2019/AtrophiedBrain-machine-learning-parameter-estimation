@@ -5,7 +5,7 @@ Repository for AtrophiedBrain, inherited and inspired by Sylvie Rheault's BrainH
 The general objectives of this BrainHack project is to use machine learning techniques to estimate the parameters of mathematical models.
 
 ## Specific learning objectives and deliverables
-During the BrainHack school, I hope to achieve to following goals:
+During the BrainHack school, I hope to achieve the following goals:
 
 ### Regression and machine learning
 
@@ -27,6 +27,16 @@ During the BrainHack school, I hope to achieve to following goals:
 
 5) Define a parameterized, ODE-based time series problem
 
-6) Generate noisy training data from the ODEs
+dx/dt = a*x + b*(y + z)
 
-6) Use machine learning techniques to recover the original parameter estimates from the noisy data.
+dy/dt = a*y + b*(x + z)
+
+dz/dt = a*z + b*(x + y)
+
+Parameters: -1  	&#8804; a, b  	&#8804; 1 
+
+6) Validate the model, investigating the identifiability of the parameters
+
+7) Generate noisy training data from the ODEs
+
+8) Use machine learning techniques to recover the original parameter estimates from the noisy data.
