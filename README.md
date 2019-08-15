@@ -42,11 +42,10 @@ dz/dt = a*z + b*(x + y)
 Parameters: -1  	&#8804; a, b  	&#8804; 1 
 
 ## Tools/Languages used
-Python
-Jupyter Notebook
-PyTorch
-Pydentify, which performs identifiability analysis by performing a Parameter Profile Analysis using COPASI (https://www.youtube.com/watch?v=F8l00uU141o)
-Julia?
+- Python
+- Jupyter Notebook
+- PyTorch
+- Pydentify, which performs identifiability analysis by performing a Parameter Profile Analysis using COPASI (https://www.youtube.com/watch?v=F8l00uU141o)
 
 ## Machine learning model architecture
 ToDo!
