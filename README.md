@@ -14,7 +14,6 @@ The general objectives of this BrainHack project are to use machine learning tec
 ## Project aims
 1. Generate noisy data from an equation and to recover the coefficients from the noisy data using machine learning.
 2. Validate ODE based model, focusing on indentfiability analysis of the model parameters.
-alidate the model, investigating the identifiability of the parameters using 
 
 ## Project deliverables
 1. Jupyter Notebook that defines a linear regression function, generates data from this function, adds noise to the data, defines a model to recover the model parameters from the linear model, splits the data into train/test sets, trains the model, and presents the results.
@@ -31,6 +30,16 @@ For the linear regression task, the following function is being used:
    f()=cognition
    
    t=systolic blood pressure/140 | u=diastolic blood pressure/90 | v=glycosylated Hb/7 | w=age/70 | x=LDL/2 | y=years of education/12 | z=sedimentation rate/20 |   
+   
+Example data:
+```
+   bp_sys  bp_dia     hba1c   age       ldl   edu  sed_rate
+0   147.0    87.0  6.936874  57.0  2.795019  14.0      32.0
+1   127.0    54.0  7.876324  76.0  5.674918  14.0      69.0
+2    93.0    76.0  9.657790  70.0  4.546000   9.0      32.0
+3   132.0    63.0  3.742432  74.0  1.960318  12.0      18.0
+4   175.0    61.0  6.932590  74.0  8.334432   5.0      25.0
+```
    
 ![Linear Regression](https://raw.githubusercontent.com/mtl-brainhack-school-2019/AtrophiedBrain-machine-learning-parameter-estimation/master/figures/linear_regression.png)
    
