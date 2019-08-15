@@ -32,6 +32,8 @@ For the linear regression task, the following function is being used:
    
    t=systolic blood pressure/140 | u=diastolic blood pressure/90 | v=glycosylated Hb/7 | w=age/70 | x=LDL/2 | y=years of education/12 | z=VS/20 |   
    
+![Linear Regression](https://raw.githubusercontent.com/mtl-brainhack-school-2019/AtrophiedBrain-machine-learning-parameter-estimation/master/figures/linear_regression.png)
+   
 ### ODE-based model
 dx/dt = a*x + b*(y + z)
 
