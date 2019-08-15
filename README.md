@@ -57,7 +57,8 @@ Parameters: -1  	&#8804; a, b  	&#8804; 1
 - <img src="https://github.com/favicon.ico" width=64> GitHub
 - <img src="https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1463481639/zkwcls2ljise1px6w3l6.png" width=64> Notebook
 - <img src="https://static.nvidiagrid.net/ngc/containers/pytorch-logo-light.png" width=64> PyTorch
-- Pydentify, which performs identifiability analysis by performing a Parameter Profile Analysis using COPASI (https://www.youtube.com/watch?v=F8l00uU141o)
+- Pydentify, which performs identifiability analysis by performing a Parameter Profile Analysis using COPASI
+https://www.youtube.com/watch?v=F8l00uU141o
 
 ## Machine learning model architecture
 Coming soon!
