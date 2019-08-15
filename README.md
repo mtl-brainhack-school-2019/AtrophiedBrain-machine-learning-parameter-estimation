@@ -65,7 +65,7 @@ Coming soon!
 
 ## To-Do
 - [X] Create initial script for linear regression task
-- [ ] Add example of data (perhaps view of Panda DataFrame head) to Dataset section of this project description
+- [X] Add example of data (perhaps view of Panda DataFrame head) to Dataset section of this project description
 - [ ] Add figures to illustrate the project and data
 - [ ] Finish linear regression script
 - [ ] Add figure of solved regression task
