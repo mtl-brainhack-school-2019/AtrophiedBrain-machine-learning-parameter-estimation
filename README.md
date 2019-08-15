@@ -2,7 +2,7 @@
 Repository for AtrophiedBrain, inherited and inspired by Sylvie Rheault's BrainHack School 2018 project https://github.com/mtl-brainhack-school-2018/rheauls
 
 ## Background
-The general objectives of this BrainHack project is to use machine learning techniques to estimate the parameters of mathematical models.
+The general objectives of this BrainHack project are to use machine learning techniques to estimate the parameters of mathematical models.
 
 ## Learning aims
 1. Linear regression using machine learning
