@@ -60,7 +60,7 @@ Parameters: -1  	&#8804; a, b  	&#8804; 1
 - Pydentify, which performs identifiability analysis by performing a Parameter Profile Analysis using COPASI (https://www.youtube.com/watch?v=F8l00uU141o)
 
 ## Machine learning model architecture
-ToDo!
+Coming soon!
 
 ## To-Do
 - [X] Create initial script for linear regression task
