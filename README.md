@@ -19,13 +19,11 @@ During the BrainHack school, I hope to achieve the following goals:
    
 2) Introduce noise to the simulated data.
 
-3) Redo data simulation using a non-linear equation.
-
-4) Use machine learning to solve this regression task
+3) Use machine learning to solve this regression task
 
 ### ODE parameter estimation and machine learning
 
-5) Define a parameterized, ODE-based time series problem
+1) Define a parameterized, ODE-based time series problem
 
 dx/dt = a*x + b*(y + z)
 
@@ -35,8 +33,8 @@ dz/dt = a*z + b*(x + y)
 
 Parameters: -1  	&#8804; a, b  	&#8804; 1 
 
-6) Validate the model, investigating the identifiability of the parameters using Pydentify, which performs identifiability analysis by performing a Parameter Profile Analysis using COPASI (https://www.youtube.com/watch?v=F8l00uU141o)
+2) Validate the model, investigating the identifiability of the parameters using Pydentify, which performs identifiability analysis by performing a Parameter Profile Analysis using COPASI (https://www.youtube.com/watch?v=F8l00uU141o)
 
-7) Generate noisy training data from the ODEs
+3) Generate noisy training data from the ODEs
 
-8) Use machine learning techniques to recover the original parameter estimates from the noisy data.
+4) Use machine learning techniques to recover the original parameter estimates from the noisy data.
