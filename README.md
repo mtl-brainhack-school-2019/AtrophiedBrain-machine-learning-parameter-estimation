@@ -53,6 +53,7 @@ ToDo!
 
 ## To-Do
 - [X] Create initial script for linear regression task
+- [ ] Add example of data (perhaps view of Panda DataFrame head) to Dataset section of this project description
 - [ ] Finish linear regression script
 - [ ] Convert linear regression script into a Jupyter notebook
 - [X] Find Python library for parameter identifiability analysis
