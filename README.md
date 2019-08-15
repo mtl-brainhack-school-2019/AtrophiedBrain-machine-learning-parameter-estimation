@@ -54,7 +54,9 @@ ToDo!
 ## To-Do
 - [X] Create initial script for linear regression task
 - [ ] Add example of data (perhaps view of Panda DataFrame head) to Dataset section of this project description
+- [ ] Add figures to illustrate the project and data
 - [ ] Finish linear regression script
+- [ ] Add figure of solved regression task
 - [ ] Convert linear regression script into a Jupyter notebook
 - [X] Find Python library for parameter identifiability analysis
 - [X] Define initial ODE system
@@ -62,5 +64,3 @@ ToDo!
 - [ ] Write script to perform ODE parameter identifiability analysis
 - [ ] Convert above two scripts into a Jupyter Notebook for model validation
 - [ ] Create a Jupyter Notebook for using machine learning to estimate the ODE-based model's parameters
-
-## Current issues
