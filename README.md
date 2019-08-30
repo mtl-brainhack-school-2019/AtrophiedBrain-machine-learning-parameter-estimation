@@ -1,19 +1,23 @@
-# Machine learning parameter estimation
+# Machine Learning Parameter Estimation
 Repository for AtrophiedBrain, inherited and inspired by Sylvie Rheault's BrainHack School 2018 project https://github.com/mtl-brainhack-school-2018/rheauls
 
-## Background
-The general objectives of this BrainHack project are to use machine learning techniques to estimate the parameters of mathematical models.
+## Summary
+The structures of the brain change naturally with aging and diseases modify the brain in their own way. Increased knowledge of the location and timing of the changes caused by disease could teach us about how diseases progress. This project used machine learning to model how the brain naturally changes.
 
-## Learning aims
-1. Linear regression using machine learning
-2. Validation of mathematical models
-3. Parameter identifiability analysis
-4. Learn more about Python data science ecosystem
-5. What are neural ODEs?
 
-## Project aims
-1. Generate noisy data from an equation and to recover the coefficients from the noisy data using machine learning.
-2. Validate ODE based model, focusing on indentfiability analysis of the model parameters.
+## Project definition
+Unfortunately, we do not fully understand how the brain normally changes. A model of how the structures of the brain change in normal aging could serve as a baseline for comparison with models of specific diseases. Neural networks are proving to be useful for many scientific tasks, can they be useful for mathematical modeling?
+
+
+Ordinary differential equations (ODEs) are commonly used to model biological systems. A [recent paper](https://arxiv.org/abs/1806.07366) introduced the concept of Neural Ordinary Differential Equations that reportedly allow ODE models to be trained using deep learning tools. This project explores the use of Neural ODEs for estimating the parameters of an ODE-based model of the change of grey matter in the brain.
+
+
+A simple single-parameter model of Cortical Thickness was chosen as the model to be studied using Neural ODEs. This single parameter is effectively the rate of atrophy or growth of each region of the brain. Click HERE for an interactive demo of this model.
+
+
+## Learning experience
+This project primarily used [Python](https://www.python.org/), [PyTorch](https://pytorch.org/) (Python’s deep learning framework), and [Jupyter Notebooks](https://jupyter.org/) stored in a public GitHub repository. [Dash by Plotly](https://plot.ly/dash/) was used to make interactive visualizations. [Julia](https://julialang.org/) and Julia’s deep learning library [Flux.jl]( https://fluxml.ai/) were also used, as their Neural ODE library [DiffEqFlux]( https://github.com/JuliaDiffEq/DiffEqFlux.jl) is under heavy development (click [here]( https://www.youtube.com/watch?v=5ZgEp36E71Y&amp=&index=37&amp=&t=0s) for an introduction).
+
 
 ## Project deliverables
 1. Jupyter Notebook that defines a linear regression function, generates data from this function, adds noise to the data, defines a model to recover the model parameters from the linear model, splits the data into train/test sets, trains the model, and presents the results.
