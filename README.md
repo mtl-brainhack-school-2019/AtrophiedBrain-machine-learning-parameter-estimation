@@ -1,5 +1,4 @@
 # Machine Learning Parameter Estimation
-Repository for AtrophiedBrain, inherited and inspired by Sylvie Rheault's BrainHack School 2018 project https://github.com/mtl-brainhack-school-2018/rheauls
 
 ## Summary
 The structures of the brain change naturally with aging and diseases modify the brain in their own way. Increased knowledge of the location and timing of the changes caused by disease could teach us about how diseases progress. This project used machine learning to model how the brain naturally changes.
