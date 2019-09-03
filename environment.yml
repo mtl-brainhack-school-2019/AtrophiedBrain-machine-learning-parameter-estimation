@@ -1,4 +1,5 @@
 dependencies:
+  - h5py
   - matplotlib
   - numpy
   - pip
