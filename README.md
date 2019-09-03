@@ -1,28 +1,29 @@
-# rheauls
-Repository for Sylvie Rheault
+# Machine Learning Parameter Estimation
 
-Background
-The general objectives of my brainhack project is to familiarise myself with machine learning techniques, develop effective way of sharing my work with a team, practice python programming and planify organization of the data for my PhD work to come.
+## Summary
+The structures of the brain change naturally with aging and diseases modify the brain in their own way. Increased knowledge of the location and timing of the changes caused by disease could teach us about how diseases progress. This project used machine learning to model how the brain naturally changes.
 
-Specific learning objectives and deliverables/n
-During the brainhack school, I hope to achieve to following goals:
+## Project definition
+Unfortunately, we do not fully understand how the brain normally changes. A model of how the structures of the brain change in normal aging could serve as a baseline for comparison with models of specific diseases. Neural networks are proving to be useful for many scientific tasks, can they be useful for mathematical modeling?
 
-1) Starting from a fictive equation and data calculated with the equation, test machine learning tools to find the weight of parameters for the linear model.  For example :
+Ordinary differential equations (ODEs) are commonly used to model biological systems. A [recent paper](https://arxiv.org/abs/1806.07366) introduced the concept of Neural Ordinary Differential Equations that reportedly allow ODE models to be trained using deep learning tools. This project explores the use of Neural ODEs for estimating the parameters of an ODE-based model of the change of grey matter in the brain.
 
-   f(t,u,v,w,x,y,z) = 2.1*t + 3.6*u + 2.8*v + 5*w + 1.4*x - 2.5*y + 4*z
-   
-   f()=cognition
-   
-   t=systolic blood pressure/140 | u=diastolic blood pressure/90 | v=glycosylated Hb/7 | w=age/70 | x=LDL/2 | y=years of education/12 | z=VS/20 |   
-   
-2) Redo with a non-linear equation.
+A simple single-parameter model of Cortical Thickness was chosen as the model to be studied using Neural ODEs. This single parameter is effectively the rate of atrophy or growth of each region of the brain. Click HERE for an interactive demo of this model.
 
-3) Redo with introduction of variability in the model. (Precision on the mesures of parameters, errors, etc)
+## Learning experience
+This project primarily used [Python](https://www.python.org/), [PyTorch](https://pytorch.org/) (Python’s deep learning framework), and [Jupyter Notebooks](https://jupyter.org/) stored in a public GitHub repository. [Dash by Plotly](https://plot.ly/dash/) was used to make interactive visualizations. [Julia](https://julialang.org/) and Julia’s deep learning library [Flux.jl](https://fluxml.ai/) were also used, as their Neural ODE library [DiffEqFlux](https://github.com/JuliaDiffEq/DiffEqFlux.jl) is under heavy development (click [here](https://www.youtube.com/watch?v=5ZgEp36E71Y&amp=&index=37&amp=&t=0s) for an introduction).
 
-4) Try the automatic clustering on one model.
+As a first task, the [PyTorch Neural ODE GitHub repository](https://github.com/rtqichen/torchdiffeq) provided by the authors of [the NIPS Neural ODE paper](https://arxiv.org/abs/1806.07366) was used to predict simulated cortical thickness trajectories. Three different models were used and it was interesting to note the different ability of these models to converge to the solution.
 
-5) Program in python a small algorythm to read text files medical past history and medication in tables (the problem is they used lot of different words for the same disease, abrviations, etc.)
+<img src="https://github.com/mtl-brainhack-school-2019/AtrophiedBrain-machine-learning-parameter-estimation/raw/master/figures/all_3_011.PNG" width=800>
 
-6) Planify the organisation of my data.
+The figure above illustrates the three models tested and how well they converged after approximately 120 training epochs. The left model used a traditional feed-forward neural network, the center model used a derivative layer that calculated the derivative of interest, and the right model combined the derivative layer with a feed-forward neural network. The most noteworthy take away from this experiment was that combining knowledge of the model of interest (in the form of the derivative layer) enabled the feed-forward neural network to converge must faster than the feed-forward model could on its own. Also interesting is that the derivative layer alone, without a feed-forward network, was unable to converge even after thousands of training epochs. Higher resolution examples of these networks and their training graphs are available HERE.
 
-I don't know with who I want to work with but I have lot of interest in vascular impact on cognition and my final model will probably includ that parameter.
+## Results
+The experiment described above showed the usefulness of using Neural ODEs for a regression task; however, it did not provide the model parameter which was the goal of this experiment. The [Neural ODE paper](https://arxiv.org/abs/1806.07366) presented the following figure which inspired a second experiment where a generative neural network would be used to extract the parameter(s) of interest in the first half of the network, followed by a model that attempted to reproduce the input trajectories using only the model parameters and the initial cortical thickness values.
+
+<img src="https://github.com/mtl-brainhack-school-2019/AtrophiedBrain-machine-learning-parameter-estimation/raw/master/figures/generator_nn.PNG">
+
+The first half of this model was created using [DiffEqFlux](https://github.com/JuliaDiffEq/DiffEqFlux.jl). This model was trained on thousands of simulated cortical thickness trajectories and could output a prediction of the model's parameter. Unfortunately, insufficient time was available to create the complete model. The parameter estimated by the model can be validated using a validation set, but the complete model should be better able to extract a useful parameter once it has trained to not only derive the parameter, but also to use it to regenerate the original cortical thickness trajectory.
+
+The deliverables for this project are an interactive Jupyter Notebook, launchable by anyone using [Binder](https://mybinder.org/), describing the project and its steps. Python and Julia scripts of the machine learning tasks will also be provided.
