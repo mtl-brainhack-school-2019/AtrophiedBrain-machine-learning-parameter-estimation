@@ -10,11 +10,10 @@ dependencies:
   - ipywidgets>=7.2
   - voila
   - voila-gridstack
-  - voila-vuetify
   - ipyleaflet
-  - jupyterlab_iframe
-  - jupyter_plotly_dash
   - gunicorn==19.9.0
-  - dash-colorscales==0.0.4
   - pip:
-      - julia
+      - dash-colorscales==0.0.4
+      - voila-vuetify
+      - jupyter_plotly_dash
+      - jupyterlab_iframe
