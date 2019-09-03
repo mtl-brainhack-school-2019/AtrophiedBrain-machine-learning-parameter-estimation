@@ -1,5 +1,5 @@
 # Machine Learning Parameter Estimation
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mtl-brainhack-school-2019/AtrophiedBrain-machine-learning-parameter-estimation/master)
 ## Summary
 The structures of the brain change naturally with aging and diseases modify the brain in their own way. Increased knowledge of the location and timing of the changes caused by disease could teach us about how diseases progress. This project used machine learning to model how the brain naturally changes.
 
