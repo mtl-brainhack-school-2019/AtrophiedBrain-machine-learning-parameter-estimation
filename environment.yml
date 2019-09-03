@@ -12,6 +12,7 @@ dependencies:
   - voila-gridstack
   - ipyleaflet
   - gunicorn==19.9.0
+  - julia
   - pip:
       - dash-colorscales==0.0.4
       - voila-vuetify
