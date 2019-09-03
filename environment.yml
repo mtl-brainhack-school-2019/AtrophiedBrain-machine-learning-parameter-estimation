@@ -1,4 +1,7 @@
+channels:
+  - forge
 dependencies:
+  - julia=1.1.1
   - h5py
   - matplotlib
   - numpy
@@ -12,7 +15,6 @@ dependencies:
   - voila-gridstack
   - ipyleaflet
   - gunicorn==19.9.0
-  - julia
   - pip:
       - dash-colorscales==0.0.4
       - voila-vuetify
