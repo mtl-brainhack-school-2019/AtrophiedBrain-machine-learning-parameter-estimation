@@ -1,5 +1,3 @@
-
-
 using Flux, DiffEqFlux, DifferentialEquations, Plots, StatsBase
 using Flux: @epochs
 using Base.Iterators: repeated, partition

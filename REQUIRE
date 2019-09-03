@@ -1,1 +1,6 @@
+Plots
 PyPlot
+DifferentialEquations
+StatsBase
+Flux
+DiffEqFlux
